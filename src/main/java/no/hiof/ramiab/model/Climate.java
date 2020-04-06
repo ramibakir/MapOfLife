@@ -7,8 +7,7 @@ public class Climate {
     private String climateType, groupName;
     private double avgColdestTemperature;
     private double avgHottestTemperature;
-    //nedbør
-    private boolean precipitation;
+    private boolean precipitation; //= nedbør
 
     public Climate(char group, char subGroup, String climateType, String groupName, double avgColdestTemperature, double avgHottestTemperature, boolean precipitation) {
         this.group = group;

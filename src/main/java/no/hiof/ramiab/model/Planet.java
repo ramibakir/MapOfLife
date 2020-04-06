@@ -8,7 +8,7 @@ public class Planet {
     private boolean isBreathable;
     private ArrayList<Location> locations = new ArrayList<>();
 
-    public Planet(String name, String climate, double mass, double radius, double orbitalPeriod, double surfaceGravity, double temperature, boolean isBreathable) {
+    public Planet(String name, String climate, double mass, double radius, double orbitalPeriod, double surfaceGravity, double temperature, boolean isBreathable, ArrayList<Location> planetLocations) {
         this.name = name;
         this.climate = climate;
         this.mass = mass;
@@ -17,6 +17,20 @@ public class Planet {
         this.surfaceGravity = surfaceGravity;
         this.temperature = temperature;
         this.isBreathable = isBreathable;
+        this.locations = planetLocations;
+    }
+
+    public Location getOneLocation(String name){
+        for(Location l : locations){
+            if(l.getLocationName().equals(name)){
+                return l;
+            }
+        }
+        return null;
+    }
+
+    public void addLocation(Location location){
+        locations.add(location);
     }
 
     public String getName() {
@@ -81,6 +95,14 @@ public class Planet {
 
     public void setBreathable(boolean breathable) {
         isBreathable = breathable;
+    }
+
+    public ArrayList<Location> getLocations() {
+        return locations;
+    }
+
+    public void setLocations(ArrayList<Location> locations) {
+        this.locations = locations;
     }
 
     @Override
