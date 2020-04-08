@@ -4,20 +4,24 @@ import java.util.ArrayList;
 
 public class Planet {
     private String name, climate;
-    private double mass, radius, orbitalPeriod, surfaceGravity, temperature;
+    private double mass, radius, orbitalPeriod, temperature;
     private boolean isBreathable;
-    private ArrayList<Location> locations = new ArrayList<>();
+    private ArrayList<Location> locations;
 
-    public Planet(String name, String climate, double mass, double radius, double orbitalPeriod, double surfaceGravity, double temperature, boolean isBreathable, ArrayList<Location> planetLocations) {
+    public Planet(String name, String climate, double mass, double radius, double orbitalPeriod, double temperature, boolean isBreathable, ArrayList<Location> planetLocations) {
         this.name = name;
         this.climate = climate;
         this.mass = mass;
         this.radius = radius;
         this.orbitalPeriod = orbitalPeriod;
-        this.surfaceGravity = surfaceGravity;
         this.temperature = temperature;
         this.isBreathable = isBreathable;
         this.locations = planetLocations;
+    }
+
+    /*Remember that this returns a copy of observations*/
+    public ArrayList<Location> getAllLocations(){
+        return new ArrayList<>(locations);
     }
 
     public Location getOneLocation(String name){
@@ -73,14 +77,6 @@ public class Planet {
         this.orbitalPeriod = orbitalPeriod;
     }
 
-    public double getSurfaceGravity() {
-        return surfaceGravity;
-    }
-
-    public void setSurfaceGravity(double surfaceGravity) {
-        this.surfaceGravity = surfaceGravity;
-    }
-
     public double getTemperature() {
         return temperature;
     }
@@ -107,7 +103,7 @@ public class Planet {
 
     @Override
     public String toString() {
-        return String.format("%s has a mass of %.2fkg, and a radius of %.2fkm. The orbital period of %s is %.2f, the surface gravity is %.2f, and the temperature is %.2fkg.",
-                getName() + getMass() + getRadius() + getOrbitalPeriod() + getSurfaceGravity() + getTemperature());
+        return String.format("%s has a mass of %.2fkg, and a radius of %.2fkm. The orbital period of %s is %.2f, and the temperature is %.2f celsius.",
+                getName(), getMass(), getRadius(), getName(), getOrbitalPeriod(), getTemperature());
     }
 }

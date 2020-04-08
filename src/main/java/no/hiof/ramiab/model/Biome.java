@@ -1,12 +1,14 @@
 package no.hiof.ramiab.model;
 
+import no.hiof.ramiab.model.climate.ClimateGroup;
+
 public class Biome {
     private String biomeName;
-    private Climate biomeClimate;
+    private ClimateGroup biomeClimateGroup;
 
-    public Biome(String name, Climate biomeClimate) {
+    public Biome(String name, ClimateGroup biomeClimateGroup) {
         this.biomeName = name;
-        this.biomeClimate = biomeClimate;
+        this.biomeClimateGroup = biomeClimateGroup;
     }
 
     public String getName() {
@@ -17,11 +19,16 @@ public class Biome {
         this.biomeName = name;
     }
 
-    public Climate getBiomeClimate() {
-        return biomeClimate;
+    public ClimateGroup getBiomeClimateGroup() {
+        return biomeClimateGroup;
     }
 
-    public void setBiomeClimate(Climate biomeClimate) {
-        this.biomeClimate = biomeClimate;
+    public void setBiomeClimateGroup(ClimateGroup biomeClimateGroup) {
+        this.biomeClimateGroup = biomeClimateGroup;
+    }
+
+    @Override
+    public String toString() {
+        return "Fiks denne";
     }
 }

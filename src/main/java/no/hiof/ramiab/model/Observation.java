@@ -1,5 +1,7 @@
 package no.hiof.ramiab.model;
 
+import no.hiof.ramiab.model.animal.Animal;
+
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.UUID;
@@ -9,13 +11,26 @@ public class Observation {
     private LocalDateTime observationTime;
     private ArrayList<Animal> animals;
 
-    public Observation(String observationName, String pictureURL, String notes, LocalDateTime observationTime, ArrayList<Animal> animals) {
+    public Observation(String observationName, String pictureURL, String notes, LocalDateTime observationTime) {
         this.ID = UUID.randomUUID().toString();
         this.observationName = observationName;
         this.pictureURL = pictureURL;
         this.notes = notes;
         this.observationTime = observationTime;
-        this.animals = animals;
+    }
+
+    public void addAnimals(Animal animal){
+        animals.add(animal);
+    }
+
+    /*Retrieves an animal based on the unique UUID*/
+    public Animal getAnAnimal(String ID){
+        for(Animal a : animals){
+            if(a.getID().equals(ID)){
+                return a;
+            }
+        }
+        return null;
     }
 
     public String getID() {
@@ -64,5 +79,10 @@ public class Observation {
 
     public void setAnimals(ArrayList<Animal> animals) {
         this.animals = animals;
+    }
+
+    @Override
+    public String toString() {
+        return "Observation " + getID() + " " + getObservationName() + " was done at " + getObservationTime() + "." + animals.size() + " different animals were seen during this observation.";
     }
 }
