@@ -29,11 +29,20 @@ public class ClimateSubGroup extends ClimateGroup {
         this.subGroupName = subGroupName;
     }
 
-    public double Precipitation() {
+    public double getPrecipitation() {
         return precipitation;
     }
 
     public void setPrecipitation(double precipitation) {
         this.precipitation = precipitation;
+    }
+
+    @Override
+    public String toString() {
+        return "ClimateSubGroup{" +
+                "climateType='" + climateType + '\'' +
+                ", subGroupName='" + subGroupName + '\'' +
+                ", precipitation=" + precipitation +
+                '}';
     }
 }

@@ -3,18 +3,17 @@ package no.hiof.ramiab.model;
 import java.util.ArrayList;
 
 public class Planet {
-    private String name, climate;
-    private double mass, radius, orbitalPeriod, temperature;
+    private String name;
+    private double mass, radius, orbitalPeriod, meanSurfaceTemperature;
     private boolean isBreathable;
     private ArrayList<Location> locations;
 
-    public Planet(String name, String climate, double mass, double radius, double orbitalPeriod, double temperature, boolean isBreathable, ArrayList<Location> planetLocations) {
+    public Planet(String name, double mass, double radius, double orbitalPeriod, double meanSurfaceTemperature, boolean isBreathable, ArrayList<Location> planetLocations) {
         this.name = name;
-        this.climate = climate;
         this.mass = mass;
         this.radius = radius;
         this.orbitalPeriod = orbitalPeriod;
-        this.temperature = temperature;
+        this.meanSurfaceTemperature = meanSurfaceTemperature;
         this.isBreathable = isBreathable;
         this.locations = planetLocations;
     }
@@ -45,14 +44,6 @@ public class Planet {
         this.name = name;
     }
 
-    public String getClimate() {
-        return climate;
-    }
-
-    public void setClimate(String climate) {
-        this.climate = climate;
-    }
-
     public double getMass() {
         return mass;
     }
@@ -77,12 +68,12 @@ public class Planet {
         this.orbitalPeriod = orbitalPeriod;
     }
 
-    public double getTemperature() {
-        return temperature;
+    public double getMeanSurfaceTemperature() {
+        return meanSurfaceTemperature;
     }
 
-    public void setTemperature(double temperature) {
-        this.temperature = temperature;
+    public void setMeanSurfaceTemperature(double meanSurfaceTemperature) {
+        this.meanSurfaceTemperature = meanSurfaceTemperature;
     }
 
     public boolean isBreathable() {
@@ -104,6 +95,6 @@ public class Planet {
     @Override
     public String toString() {
         return String.format("%s has a mass of %.2fkg, and a radius of %.2fkm. The orbital period of %s is %.2f, and the temperature is %.2f celsius.",
-                getName(), getMass(), getRadius(), getName(), getOrbitalPeriod(), getTemperature());
+                getName(), getMass(), getRadius(), getName(), getOrbitalPeriod(), getmeanSurfaceTemperature());
     }
 }
