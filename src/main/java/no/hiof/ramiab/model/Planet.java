@@ -5,17 +5,16 @@ import java.util.ArrayList;
 public class Planet {
     private String name;
     private double mass, radius, orbitalPeriod, meanSurfaceTemperature;
-    private boolean isBreathable;
+    private boolean breathable;
     private ArrayList<Location> locations;
 
-    public Planet(String name, double mass, double radius, double orbitalPeriod, double meanSurfaceTemperature, boolean isBreathable, ArrayList<Location> planetLocations) {
+    public Planet(String name, double mass, double radius, double orbitalPeriod, double meanSurfaceTemperature, boolean breathable) {
         this.name = name;
         this.mass = mass;
         this.radius = radius;
         this.orbitalPeriod = orbitalPeriod;
         this.meanSurfaceTemperature = meanSurfaceTemperature;
-        this.isBreathable = isBreathable;
-        this.locations = planetLocations;
+        this.breathable = breathable;
     }
 
     /*Remember that this returns a copy of observations*/
@@ -23,9 +22,9 @@ public class Planet {
         return new ArrayList<>(locations);
     }
 
-    public Location getOneLocation(String name){
+    public Location getOneLocation(String id){
         for(Location l : locations){
-            if(l.getLocationName().equals(name)){
+            if(l.getID().equals(id)){
                 return l;
             }
         }
@@ -77,11 +76,11 @@ public class Planet {
     }
 
     public boolean isBreathable() {
-        return isBreathable;
+        return breathable;
     }
 
     public void setBreathable(boolean breathable) {
-        isBreathable = breathable;
+        this.breathable = breathable;
     }
 
     public ArrayList<Location> getLocations() {
@@ -95,6 +94,6 @@ public class Planet {
     @Override
     public String toString() {
         return String.format("%s has a mass of %.2fkg, and a radius of %.2fkm. The orbital period of %s is %.2f, and the temperature is %.2f celsius.",
-                getName(), getMass(), getRadius(), getName(), getOrbitalPeriod(), getmeanSurfaceTemperature());
+                getName(), getMass(), getRadius(), getName(), getOrbitalPeriod(), getMeanSurfaceTemperature());
     }
 }
