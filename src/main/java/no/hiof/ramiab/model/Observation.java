@@ -4,7 +4,6 @@ import no.hiof.ramiab.model.animal.Animal;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.UUID;
 
 public class Observation implements Comparable<Observation>{
     private String ID;
@@ -12,17 +11,18 @@ public class Observation implements Comparable<Observation>{
     private String notes;
     private LocalDate observationTime;
     private ArrayList<Animal> animals;
+    private static int observationCounter = 1;
 
     public Observation(String observationName, String notes, LocalDate observationTime) {
-        this.ID = UUID.randomUUID().toString();
+        this.ID = "OBSERVATION - " + observationCounter++;
         this.observationName = observationName;
         this.notes = notes;
         this.observationTime = observationTime;
     }
 
-    public void addAnimals(Animal animal){
+    /*public void addAnimals(Animal animal){
         animals.add(animal);
-    }
+    }*/
 
     /*Retrieves an animal based on the unique UUID*/
     public Animal getAnAnimal(String ID){
@@ -76,7 +76,7 @@ public class Observation implements Comparable<Observation>{
 
     @Override
     public String toString() {
-        return "Observation " + getID() + " " + getObservationName() + " was done at " + getObservationTime() + "." + animals.size() + " different animals were seen during this observation.";
+        return getID() + ": " + getObservationName() + " was done at " + getObservationTime() + ". 5 different animals were seen during this observation. " + getNotes();
     }
 
     @Override

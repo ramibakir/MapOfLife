@@ -33,9 +33,9 @@ public class Location {
         return new ArrayList<>(observations);
     }
 
-    public void addObservation(Observation observation){
-        observations.add(observation);
-    }
+//    public void addObservation(Observation observation){
+//        observations.add(observation);
+//    }
 
     public String getID() {
         return ID;

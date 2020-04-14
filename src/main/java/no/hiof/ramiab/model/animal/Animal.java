@@ -1,7 +1,5 @@
 package no.hiof.ramiab.model.animal;
 
-import java.util.UUID;
-
 public abstract class Animal implements Comparable<Animal> {
     private String ID, animalName, latinName, color, pictureURL;
     private boolean livesInWater, canFly, laysEggs;
@@ -9,7 +7,7 @@ public abstract class Animal implements Comparable<Animal> {
     private int legs;
 
     public Animal(String ID, String animalName, String latinName, String color, String pictureURL, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, int legs) {
-        this.ID = UUID.randomUUID().toString();
+        this.ID = ID;
         this.animalName = animalName;
         this.latinName = latinName;
         this.color = color;
@@ -103,7 +101,7 @@ public abstract class Animal implements Comparable<Animal> {
 
     @Override
     public String toString() {
-        return getAnimalName() + " or "+ getLatinName() + "in Latin is a " +  getColor() + "colored animal. " + getAnimalName() + " weighs " + getWeight() + " and has " + getLegs() + " legs.";
+        return String.format("%s", getAnimalName());
     }
 
     @Override

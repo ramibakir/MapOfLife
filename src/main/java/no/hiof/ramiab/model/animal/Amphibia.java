@@ -2,9 +2,10 @@ package no.hiof.ramiab.model.animal;
 
 public class Amphibia extends Animal {
     private String group, subGroup;
+    private static int amphibiaCounter = 1;
 
     public Amphibia(String ID, String animalName, String latinName, String color, String pictureURL, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, String group, String subGroup, int legs) {
-        super(ID, animalName, latinName, color, pictureURL, livesInWater, canFly, laysEggs, weight, legs);
+        super(Amphibia.class.getSimpleName() + " " +amphibiaCounter++, animalName, latinName, color, pictureURL, livesInWater, canFly, laysEggs, weight, legs);
         this.group = group;
         this.subGroup = subGroup;
     }
@@ -27,6 +28,6 @@ public class Amphibia extends Animal {
 
     @Override
     public String toString() {
-        return super.toString() + " " + getAnimalName() + " is a " + this.getClass().getSimpleName() + " and belong to the group " + getGroup() + " and is a part of the " + getSubGroup() + " family";
+        return String.format("%s is an %s and belongs to the group %s and is a part of the %s family. %s weighs %fg and has %d legs", super.toString(), this.getClass().getSimpleName(), getGroup(), getSubGroup());
     }
 }

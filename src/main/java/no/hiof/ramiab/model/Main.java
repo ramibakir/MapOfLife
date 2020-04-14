@@ -56,38 +56,41 @@ public class Main {
         Planet saturn = new Planet("Saturn",5.683E26,58232, 10585, -178);
         Planet uranus = new Planet("Uranus",8.681E25,25362, 30660, -224);
         Planet neptune = new Planet("Neptune",1.024E26,24622, 60225, -214);
-
-        /*uranus.addLocation(URL001);
-        uranus.addLocation(URL002);
-
-        mars.addLocation(MAL001);
-
-        jupiter.addLocation(JUL001);*/
         /* Planet creation above */
 
         /* Observation creation below */
-        Observation uranus001 = new Observation("Observation 1 on Uranus - 2345", String.format("First observation of an animal on planet %s. Because we landed near the ocean," +
+        Observation uranus001 = new Observation("First observation on Uranus", String.format("First observation of an animal on planet %s. Because we landed near the ocean," +
                 "we got to observe the ocean for a while, but to avail. It was not until we sent a drone underwater that we saw signs of life in the form of a %s." +
                 "After going both further out and deeper we actually saw a %s, which is amazing!", uranus.getName(), snakeSeaCucumber.getAnimalName(), narwhal.getAnimalName()),
                 LocalDate.of(2345, 04, 12));
-        Observation uranus002 = new Observation("Observation 2  on Uranus - 2345", String.format("Almost two weeks has passed since we last saw an animal, I think we scared them away when we landed." +
+        Observation uranus002 = new Observation("Second observation on Uranus", String.format("Almost two weeks has passed since we last saw an animal, I think we scared them away when we landed." +
                 "Anyway great news, during our expedition today we saw a pack of %s s flying around, confirming our suspicion that there were some species of %s on this planet.", eskimoCurlew.getAnimalName(),
                 Aves.class.getSimpleName()), LocalDate.of(2345, 04, 24));
-        Observation mars001 = new Observation("Observation 1 on Mars - 2338",   String.format("Just landed on %s after almost a year of travelling, and we almost immediately saw a %s at location %s!",
-                mars.getName(), hulaFrog.getAnimalName(), MAL001.getLocationName()), LocalDate.of(2045, 05, 17));
+        Observation mars001 = new Observation("First observation on Mars",   String.format("Just landed on %s after almost a year of travelling, and we almost immediately saw a %s at location %s!",
+                mars.getName(), hulaFrog.getAnimalName(), MAL001.getLocationName()), LocalDate.of(2338, 05, 17));
+        /* Observation creation above */
+
+       /* uranus.addLocation(URL001);
+        uranus.addLocation(URL002);
+        mars.addLocation(MAL001);
+        jupiter.addLocation(JUL001);
 
         uranus001.addAnimals(snakeSeaCucumber);
         uranus001.addAnimals(narwhal);
         uranus002.addAnimals(eskimoCurlew);
-
         mars001.addAnimals(hulaFrog);
-        /* Observation creation above */
+
+        URL001.addObservation(uranus001);
+        URL002.addObservation(uranus002);
+        MAL001.addObservation(mars001);*/
 
         System.out.println(uranus001);
         System.out.println("***********************************************");
         System.out.println(uranus002);
         System.out.println("***********************************************");
         System.out.println(mars001);
+        System.out.println("***********************************************");
+        System.out.println(hulaFrog);
 
 
     }
