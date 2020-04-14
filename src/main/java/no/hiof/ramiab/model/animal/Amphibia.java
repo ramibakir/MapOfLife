@@ -28,6 +28,7 @@ public class Amphibia extends Animal {
 
     @Override
     public String toString() {
-        return String.format("%s is an %s and belongs to the group %s and is a part of the %s family. %s weighs %fg and has %d legs", super.toString(), this.getClass().getSimpleName(), getGroup(), getSubGroup());
+        return String.format("%s is an %s and belongs to the group %s and is a part of the %s family. %s weighs %.2fg and has %d legs", super.toString(), this.getClass().getSimpleName(), getGroup(), getSubGroup(),
+                getAnimalName(), getWeight(), getLegs());
     }
 }

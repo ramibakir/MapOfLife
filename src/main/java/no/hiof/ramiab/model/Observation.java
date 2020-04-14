@@ -10,7 +10,7 @@ public class Observation implements Comparable<Observation>{
     private String observationName;
     private String notes;
     private LocalDate observationTime;
-    private ArrayList<Animal> animals;
+    private ArrayList<Animal> animals = new ArrayList<>();
     private static int observationCounter = 1;
 
     public Observation(String observationName, String notes, LocalDate observationTime) {
@@ -20,11 +20,11 @@ public class Observation implements Comparable<Observation>{
         this.observationTime = observationTime;
     }
 
-    /*public void addAnimals(Animal animal){
+    public void addAnimals(Animal animal){
         animals.add(animal);
-    }*/
+    }
 
-    /*Retrieves an animal based on the unique UUID*/
+    /*Retrieves an animal based on ID*/
     public Animal getAnAnimal(String ID){
         for(Animal a : animals){
             if(a.getID().equals(ID)){

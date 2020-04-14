@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Planet {
     private String name;
     private double mass, radius, orbitalPeriod, meanSurfaceTemperature;
-    private ArrayList<Location> locations;
+    private ArrayList<Location> locations = new ArrayList<>();
 
     public Planet(String name, double mass, double radius, double orbitalPeriod, double meanSurfaceTemperature) {
         this.name = name;
@@ -29,9 +29,9 @@ public class Planet {
         return null;
     }
 
-    /*public void addLocation(Location location){
+    public void addLocation(Location location){
         locations.add(location);
-    }*/
+    }
 
     public String getName() {
         return name;

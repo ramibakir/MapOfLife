@@ -7,7 +7,7 @@ public class Location {
     private double latitude, longitude;
     private Biome locationBiome;
     private int observationsAtLocation;
-    private ArrayList<Observation> observations;
+    private ArrayList<Observation> observations = new ArrayList<>();
 
     public Location(String ID, String locationName, double latitude, double longitude, Biome locationBiome, int observationsAtLocation) {
         this.ID = ID;
@@ -33,9 +33,9 @@ public class Location {
         return new ArrayList<>(observations);
     }
 
-//    public void addObservation(Observation observation){
-//        observations.add(observation);
-//    }
+    public void addObservation(Observation observation){
+        observations.add(observation);
+   }
 
     public String getID() {
         return ID;
