@@ -4,7 +4,6 @@ import no.hiof.ramiab.model.animal.Amphibia;
 import no.hiof.ramiab.model.animal.Aves;
 import no.hiof.ramiab.model.animal.Invertebrate;
 import no.hiof.ramiab.model.animal.Mammalia;
-import no.hiof.ramiab.model.climate.ClimateGroup;
 
 import java.time.LocalDate;
 
@@ -41,14 +40,14 @@ public class Main {
         /* Biome creation above */
 
         /* Planet creation below */
-        Planet mercury = new Planet("Mercury", 3.283E23,2439.7, 88, 430);
-        Planet venus = new Planet("Venus",4.867E24,6051.8, 225, 462);
-        Planet earth = new Planet("Earth",5.972E24,6371.1, 365,14);
-        Planet mars = new Planet("Mars",6.39E23,3389.5, 687, -60);
-        Planet jupiter = new Planet("Jupiter",1.898E27,69911, 4380, -145);
-        Planet saturn = new Planet("Saturn",5.683E26,58232, 10585, -178);
-        Planet uranus = new Planet("Uranus",8.681E25,25362, 30660, -224);
-        Planet neptune = new Planet("Neptune",1.024E26,24622, 60225, -214);
+        Planet mercury = new Planet("Mercury", "Solar System", 3.283E23,2439.7, 88, 430);
+        Planet venus = new Planet("Venus","Solar System", 4.867E24,6051.8, 225, 462);
+        Planet earth = new Planet("Earth", "Solar System", 5.972E24,6371.1, 365,14);
+        Planet mars = new Planet("Mars","Solar System", 6.39E23,3389.5, 687, -60);
+        Planet jupiter = new Planet("Jupiter","Solar System", 1.898E27,69911, 4380, -145);
+        Planet saturn = new Planet("Saturn","Solar System",5.683E26,58232, 10585, -178);
+        Planet uranus = new Planet("Uranus","Solar System",8.681E25,25362, 30660, -224);
+        Planet neptune = new Planet("Neptune","Solar System",1.024E26,24622, 60225, -214);
         /* Planet creation above */
 
         /* Location creation below */
@@ -78,7 +77,7 @@ public class Main {
         uranus.getOneLocation("URL001").addObservation(uranus001);
         uranus.getOneLocation("URL002").addObservation(uranus002);
         mars.getOneLocation("MAL001").addObservation(mars001);
-        
+
         System.out.println(uranus001);
         System.out.println("***********************************************");
         System.out.println(uranus002);

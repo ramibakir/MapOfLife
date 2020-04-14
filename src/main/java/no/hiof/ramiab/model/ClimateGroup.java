@@ -1,6 +1,4 @@
-package no.hiof.ramiab.model.climate;
-
-import java.util.ArrayList;
+package no.hiof.ramiab.model;
 
 public class ClimateGroup implements Comparable<ClimateGroup> {
 

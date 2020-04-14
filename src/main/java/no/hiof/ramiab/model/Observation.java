@@ -76,7 +76,7 @@ public class Observation implements Comparable<Observation>{
 
     @Override
     public String toString() {
-        return getID() + ": " + getObservationName() + " was done at " + getObservationTime() + ". 5 different animals were seen during this observation. " + getNotes();
+        return getID() + ": " + getObservationName() + " was done at " + getObservationTime() + ". " + animals.size() + " different animals were seen during this observation. " + getNotes();
     }
 
     @Override

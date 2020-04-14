@@ -1,7 +1,5 @@
 package no.hiof.ramiab.model;
 
-import no.hiof.ramiab.model.climate.ClimateGroup;
-
 public class Biome {
     private String biomeName;
     private ClimateGroup biomeClimateGroup;

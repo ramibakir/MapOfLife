@@ -3,12 +3,13 @@ package no.hiof.ramiab.model;
 import java.util.ArrayList;
 
 public class Planet {
-    private String name;
+    private String name, planetSystem;
     private double mass, radius, orbitalPeriod, meanSurfaceTemperature;
     private ArrayList<Location> locations = new ArrayList<>();
 
-    public Planet(String name, double mass, double radius, double orbitalPeriod, double meanSurfaceTemperature) {
+    public Planet(String name, String planetSystem, double mass, double radius, double orbitalPeriod, double meanSurfaceTemperature) {
         this.name = name;
+        this.planetSystem = planetSystem;
         this.mass = mass;
         this.radius = radius;
         this.orbitalPeriod = orbitalPeriod;
@@ -39,6 +40,14 @@ public class Planet {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPlanetSystem() {
+        return planetSystem;
+    }
+
+    public void setPlanetSystem(String planetSystem) {
+        this.planetSystem = planetSystem;
     }
 
     public double getMass() {
