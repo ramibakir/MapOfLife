@@ -37,6 +37,10 @@ public class Location {
         observations.add(observation);
    }
 
+   public void removeObservation(Observation observation){
+        observations.remove(observation);
+   }
+
     public String getID() {
         return ID;
     }

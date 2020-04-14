@@ -14,7 +14,7 @@ public class Observation implements Comparable<Observation>{
     private static int observationCounter = 1;
 
     public Observation(String observationName, String notes, LocalDate observationTime) {
-        this.ID = "OBSERVATION - " + observationCounter++;
+        this.ID = "OBSERVATION00" + observationCounter++;
         this.observationName = observationName;
         this.notes = notes;
         this.observationTime = observationTime;
