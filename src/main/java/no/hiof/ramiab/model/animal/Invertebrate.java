@@ -5,8 +5,8 @@ import no.hiof.ramiab.model.animal.Animal;
 public class Invertebrate extends Animal {
     private String group, subGroup;
 
-    public Invertebrate(String ID, String animalName, String latinName, String color, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, int legs, String group, String subGroup) {
-        super(ID, animalName, latinName, color, livesInWater, canFly, laysEggs, weight, legs);
+    public Invertebrate(String ID, String animalName, String latinName, String color, String pictureURL, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, int legs, String group, String subGroup) {
+        super(ID, animalName, latinName, color, pictureURL, livesInWater, canFly, laysEggs, weight, legs);
         this.group = group;
         this.subGroup = subGroup;
     }

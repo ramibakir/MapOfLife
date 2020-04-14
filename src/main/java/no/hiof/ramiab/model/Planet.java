@@ -5,16 +5,14 @@ import java.util.ArrayList;
 public class Planet {
     private String name;
     private double mass, radius, orbitalPeriod, meanSurfaceTemperature;
-    private boolean breathable;
     private ArrayList<Location> locations;
 
-    public Planet(String name, double mass, double radius, double orbitalPeriod, double meanSurfaceTemperature, boolean breathable) {
+    public Planet(String name, double mass, double radius, double orbitalPeriod, double meanSurfaceTemperature) {
         this.name = name;
         this.mass = mass;
         this.radius = radius;
         this.orbitalPeriod = orbitalPeriod;
         this.meanSurfaceTemperature = meanSurfaceTemperature;
-        this.breathable = breathable;
     }
 
     /*Remember that this returns a copy of observations*/
@@ -31,9 +29,9 @@ public class Planet {
         return null;
     }
 
-    public void addLocation(Location location){
+    /*public void addLocation(Location location){
         locations.add(location);
-    }
+    }*/
 
     public String getName() {
         return name;
@@ -73,14 +71,6 @@ public class Planet {
 
     public void setMeanSurfaceTemperature(double meanSurfaceTemperature) {
         this.meanSurfaceTemperature = meanSurfaceTemperature;
-    }
-
-    public boolean isBreathable() {
-        return breathable;
-    }
-
-    public void setBreathable(boolean breathable) {
-        this.breathable = breathable;
     }
 
     public ArrayList<Location> getLocations() {

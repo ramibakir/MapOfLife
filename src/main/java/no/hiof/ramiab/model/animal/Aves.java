@@ -2,13 +2,13 @@ package no.hiof.ramiab.model.animal;
 
 import no.hiof.ramiab.model.animal.Animal;
 
-public class Bird extends Animal {
+public class Aves extends Animal {
     private double wingspan;
     private double height;
     private boolean hasWings;
 
-    public Bird(String ID, String animalName, String latinName, String color, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, double wingspan, double height, boolean hasWings, int legs) {
-        super(ID, animalName, latinName, color, livesInWater, canFly, laysEggs, weight, legs);
+    public Aves(String ID, String animalName, String latinName, String color, String pictureURL, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, double wingspan, double height, boolean hasWings, int legs) {
+        super(ID, animalName, latinName, color, pictureURL, livesInWater, canFly, laysEggs, weight, legs);
         this.wingspan = wingspan;
         this.height = height;
         this.hasWings = hasWings;

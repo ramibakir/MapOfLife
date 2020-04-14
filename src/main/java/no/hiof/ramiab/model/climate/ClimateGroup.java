@@ -2,44 +2,25 @@ package no.hiof.ramiab.model.climate;
 
 import java.util.ArrayList;
 
-public class ClimateGroup {
+public class ClimateGroup implements Comparable<ClimateGroup> {
 
     /*Simplified Köppen climate classification*/
-    private char group;
+    private char groupLetter;
     private String groupName;
     private double avgTemperature;
-    private ArrayList<ClimateSubGroup> subGroups = new ArrayList<>();
 
-    public ClimateGroup(char group, String groupName, double avgTemperature) {
-        this.group = group; //A
+    public ClimateGroup(char groupLetter, String groupName, double avgTemperature) {
+        this.groupLetter = groupLetter; //A
         this.groupName = groupName; //Tropical climate
         this.avgTemperature = avgTemperature;
     }
 
-    /*Remember that this returns a copy of observations*/
-    public ArrayList<ClimateSubGroup> getAllSubGroups(){
-        return new ArrayList<>(subGroups);
+    public char getGroupLetter() {
+        return groupLetter;
     }
 
-    public ClimateSubGroup getASubGroup(String name){
-        for(ClimateSubGroup cSG : subGroups){
-            if(cSG.getSubGroupName().equals(name)){
-                return cSG;
-            }
-        }
-        return null;
-    }
-
-    public void addSubGroups(ClimateSubGroup c){
-        subGroups.add(c);
-    }
-
-    public char getGroup() {
-        return group;
-    }
-
-    public void setGroup(char group) {
-        this.group = group;
+    public void setGroupLetter(char groupLetter) {
+        this.groupLetter = groupLetter;
     }
 
     public String getGroupName() {
@@ -61,5 +42,16 @@ public class ClimateGroup {
     @Override
     public String toString() {
         return String.format("In group %c, also known as %s, there ");
+    }
+
+    @Override
+    public int compareTo(ClimateGroup climateGroup) {
+        if(this.avgTemperature < climateGroup.getAvgTemperature()){
+            return -1;
+        }
+        else if(this.avgTemperature > climateGroup.getAvgTemperature()){
+            return 1;
+        }
+        return 0;
     }
 }

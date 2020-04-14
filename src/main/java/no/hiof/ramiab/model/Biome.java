@@ -19,7 +19,7 @@ public class Biome {
         this.biomeName = name;
     }
 
-    public ClimateGroup getBiomeClimateGroup() {
+    public ClimateGroup getBiomeClimateSubGroup() {
         return biomeClimateGroup;
     }
 

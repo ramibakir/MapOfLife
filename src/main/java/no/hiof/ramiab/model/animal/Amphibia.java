@@ -1,10 +1,10 @@
 package no.hiof.ramiab.model.animal;
 
-public class Amphibian extends Animal {
+public class Amphibia extends Animal {
     private String group, subGroup;
 
-    public Amphibian(String ID, String animalName, String latinName, String color, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, String group, String subGroup, int legs) {
-        super(ID, animalName, latinName, color, livesInWater, canFly, laysEggs, weight, legs);
+    public Amphibia(String ID, String animalName, String latinName, String color, String pictureURL, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, String group, String subGroup, int legs) {
+        super(ID, animalName, latinName, color, pictureURL, livesInWater, canFly, laysEggs, weight, legs);
         this.group = group;
         this.subGroup = subGroup;
     }

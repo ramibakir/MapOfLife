@@ -2,19 +2,20 @@ package no.hiof.ramiab.model;
 
 import no.hiof.ramiab.model.animal.Animal;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.UUID;
 
-public class Observation {
-    private String ID, observationName, pictureURL, notes;
-    private LocalDateTime observationTime;
+public class Observation implements Comparable<Observation>{
+    private String ID;
+    private String observationName;
+    private String notes;
+    private LocalDate observationTime;
     private ArrayList<Animal> animals;
 
-    public Observation(String observationName, String pictureURL, String notes, LocalDateTime observationTime) {
+    public Observation(String observationName, String notes, LocalDate observationTime) {
         this.ID = UUID.randomUUID().toString();
         this.observationName = observationName;
-        this.pictureURL = pictureURL;
         this.notes = notes;
         this.observationTime = observationTime;
     }
@@ -49,14 +50,6 @@ public class Observation {
         this.observationName = observationName;
     }
 
-    public String getPictureURL() {
-        return pictureURL;
-    }
-
-    public void setPictureURL(String pictureURL) {
-        this.pictureURL = pictureURL;
-    }
-
     public String getNotes() {
         return notes;
     }
@@ -65,11 +58,11 @@ public class Observation {
         this.notes = notes;
     }
 
-    public LocalDateTime getObservationTime() {
+    public LocalDate getObservationTime() {
         return observationTime;
     }
 
-    public void setObservationTime(LocalDateTime observationTime) {
+    public void setObservationTime(LocalDate observationTime) {
         this.observationTime = observationTime;
     }
 
@@ -84,5 +77,10 @@ public class Observation {
     @Override
     public String toString() {
         return "Observation " + getID() + " " + getObservationName() + " was done at " + getObservationTime() + "." + animals.size() + " different animals were seen during this observation.";
+    }
+
+    @Override
+    public int compareTo(Observation observation) {
+        return this.observationTime.compareTo(observation.getObservationTime());
     }
 }
