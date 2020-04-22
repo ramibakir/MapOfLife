@@ -5,7 +5,6 @@ public class Location {
     private double latitude, longitude;
     private Biome locationBiome;
     private int observationsAtLocation;
-    //private ArrayList<Observation> observations = new ArrayList<>();
 
     /*Remember to create empty constructors for deserializing*/
     public Location() {
@@ -20,29 +19,6 @@ public class Location {
         this.locationBiome = locationBiome;
         this.observationsAtLocation = observationsAtLocation;
     }
-
-    /*Retrieves an observation based on the ID*//*
-    public Observation getOneObservation(String ID) {
-        for (Observation o : observations) {
-            if (o.getId().equals(ID)) {
-                return o;
-            }
-        }
-        return null;
-    }
-
-    *//*Remember that this returns a copy of observations*//*
-    public ArrayList<Observation> getAllObservations() {
-        return observations;
-    }
-
-    public void addObservation(Observation observation) {
-        observations.add(observation);
-    }
-
-    public void removeObservation(Observation observation) {
-        observations.remove(observation);
-    }*/
 
     public String getID() {
         return ID;

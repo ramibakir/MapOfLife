@@ -10,7 +10,8 @@ public class Mammalia extends Animal {
 
     }
 
-    public Mammalia(String ID, String animalName, String latinName, String color, String pictureURL, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, int legs, String family, double totalBodySize, boolean domesticated) {
+    public Mammalia(String ID, String animalName, String latinName, String color, String pictureURL, boolean livesInWater, boolean canFly, boolean laysEggs,
+                    double weight, int legs, String family, double totalBodySize, boolean domesticated) {
         super(ID, animalName, latinName, color, pictureURL, livesInWater, canFly, laysEggs, weight, legs);
         this.family = family;
         this.totalBodySize = totalBodySize;
