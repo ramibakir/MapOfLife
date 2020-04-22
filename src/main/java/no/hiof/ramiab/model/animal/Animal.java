@@ -1,14 +1,34 @@
 package no.hiof.ramiab.model.animal;
 
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
+/*Needs to be added for the deserializing to know how to construct each animal*/
+@JsonTypeInfo(
+        use = JsonTypeInfo.Id.NAME,
+        include = JsonTypeInfo.As.PROPERTY,
+        property = "type")
+@JsonSubTypes({
+        @JsonSubTypes.Type(value = Amphibia.class, name = "Amphibia"),
+        @JsonSubTypes.Type(value = Aves.class, name = "Aves"),
+        @JsonSubTypes.Type(value = Invertebrate.class, name = "Invertebrate"),
+        @JsonSubTypes.Type(value = Mammalia.class, name = "Mammalia")
+})
+
 public abstract class Animal implements Comparable<Animal> {
-    private String ID, animalName, latinName, color, pictureURL;
+    private String ID, name, latinName, color, pictureURL;
     private boolean livesInWater, canFly, laysEggs;
     private double weight;
     private int legs;
 
-    public Animal(String ID, String animalName, String latinName, String color, String pictureURL, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, int legs) {
+    /*Remember to create empty constructors for deserializing*/
+    public Animal() {
+
+    }
+
+    public Animal(String ID, String name, String latinName, String color, String pictureURL, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, int legs) {
         this.ID = ID;
-        this.animalName = animalName;
+        this.name = name;
         this.latinName = latinName;
         this.color = color;
         this.pictureURL = pictureURL;
@@ -27,12 +47,12 @@ public abstract class Animal implements Comparable<Animal> {
         this.ID = ID;
     }
 
-    public String getAnimalName() {
-        return animalName;
+    public String getName() {
+        return name;
     }
 
-    public void setAnimalName(String animalName) {
-        this.animalName = animalName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getLatinName() {
@@ -101,15 +121,14 @@ public abstract class Animal implements Comparable<Animal> {
 
     @Override
     public String toString() {
-        return String.format("%s", getAnimalName());
+        return String.format("%s", getName());
     }
 
     @Override
     public int compareTo(Animal a) {
-        if(this.weight < a.getWeight()){
+        if (this.weight < a.getWeight()) {
             return -1;
-        }
-        else if(this.weight > a.getWeight()){
+        } else if (this.weight > a.getWeight()) {
             return 1;
         }
         return 0;

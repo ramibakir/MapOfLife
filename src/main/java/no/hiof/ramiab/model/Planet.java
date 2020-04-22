@@ -1,14 +1,21 @@
 package no.hiof.ramiab.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.ArrayList;
 
 public class Planet {
-    private String name, planetSystem;
+    private String planetName, planetSystem;
     private double mass, radius, orbitalPeriod, meanSurfaceTemperature;
     private ArrayList<Location> locations = new ArrayList<>();
 
-    public Planet(String name, String planetSystem, double mass, double radius, double orbitalPeriod, double meanSurfaceTemperature) {
-        this.name = name;
+    /*Remember to create empty constructors for deserializing*/
+    public Planet() {
+
+    }
+
+    public Planet(String planetName, String planetSystem, double mass, double radius, double orbitalPeriod, double meanSurfaceTemperature) {
+        this.planetName = planetName;
         this.planetSystem = planetSystem;
         this.mass = mass;
         this.radius = radius;
@@ -17,29 +24,35 @@ public class Planet {
     }
 
     /*Remember that this returns a copy of observations*/
-    public ArrayList<Location> getAllLocations(){
+    /*Gjorde at locations ble duplisert*/
+    @JsonIgnore
+    public ArrayList<Location> getAllLocations() {
         return new ArrayList<>(locations);
     }
 
-    public Location getOneLocation(String id){
-        for(Location l : locations){
-            if(l.getID().equals(id)){
+    public Location getOneLocation(String id) {
+        for (Location l : locations) {
+            if (l.getID().equals(id)) {
                 return l;
             }
         }
         return null;
     }
 
-    public void addLocation(Location location){
+    public void addLocation(Location location) {
         locations.add(location);
     }
 
-    public String getName() {
-        return name;
+    public void removeLocation(Location location) {
+        locations.remove(location);
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getPlanetName() {
+        return planetName;
+    }
+
+    public void setPlanetName(String planetName) {
+        this.planetName = planetName;
     }
 
     public String getPlanetSystem() {
@@ -93,6 +106,6 @@ public class Planet {
     @Override
     public String toString() {
         return String.format("%s has a mass of %.2fkg, and a radius of %.2fkm. The orbital period of %s is %.2f, and the temperature is %.2f celsius.",
-                getName(), getMass(), getRadius(), getName(), getOrbitalPeriod(), getMeanSurfaceTemperature());
+                getPlanetName(), getMass(), getRadius(), getPlanetName(), getOrbitalPeriod(), getMeanSurfaceTemperature());
     }
 }

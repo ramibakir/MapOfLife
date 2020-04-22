@@ -1,11 +1,14 @@
 package no.hiof.ramiab.model.animal;
 
-import no.hiof.ramiab.model.animal.Animal;
-
 public class Aves extends Animal {
     private double wingspan;
     private double height;
     private boolean hasWings;
+
+    /*Remember to create empty constructors for deserializing*/
+    public Aves() {
+
+    }
 
     public Aves(String ID, String animalName, String latinName, String color, String pictureURL, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, double wingspan, double height, boolean hasWings, int legs) {
         super(ID, animalName, latinName, color, pictureURL, livesInWater, canFly, laysEggs, weight, legs);
@@ -40,6 +43,6 @@ public class Aves extends Animal {
 
     @Override
     public String toString() {
-        return super.toString() + " " + getAnimalName() + " is a " + this.getClass().getSimpleName() + " and has a wingspan of " + getWingspan() + " and a height of " + getHeight();
+        return String.format("%s is an %s and weighs %.2fg and has %d legs. %s has a wingspan of %fm and a height of %fcm", super.toString(), this.getClass().getSimpleName(), getWeight(), getLegs(), getName(), getWingspan(), getHeight());
     }
 }

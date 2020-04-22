@@ -1,0 +1,176 @@
+[
+  {
+    "id": "OBSERVATION001",
+    "name": "First observation on Uranus",
+    "notes": "First observation of an animal on planet Uranus. Because we landed near the ocean,we got to observe the ocean for a while, but to avail. It was not until we sent a drone underwater that we saw signs of life in the form of a Snake Sea Cucumber.After going both further out and deeper we actually saw a Snake Sea Cucumber, which is amazing!",
+    "observationTime": [
+      2345,
+      4,
+      12
+    ],
+    "observationAnimals": {
+      "type": "Invertebrate",
+      "name": "Snake Sea Cucumber",
+      "latinName": "Synapta maculata",
+      "color": "Red, black, green, blue or brown.",
+      "pictureURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Reef1118_-_Flickr_-_NOAA_Photo_Library.jpg/1200px-Reef1118_-_Flickr_-_NOAA_Photo_Library.jpg",
+      "livesInWater": true,
+      "canFly": false,
+      "laysEggs": true,
+      "weight": 400.0,
+      "legs": 0,
+      "group": "Echinodermata",
+      "subGroup": "Holothuroidea",
+      "id": "SSC100"
+    },
+    "location": {
+      "locationName": "Uranus location 001",
+      "latitude": -82.666936,
+      "longitude": 113.268002,
+      "locationBiome": {
+        "biomeClimateGroup": {
+          "groupLetter": "E",
+          "groupName": "Polar & Alpine Climate",
+          "avgTemperature": 5.0
+        },
+        "name": "Tundra"
+      },
+      "observationsAtLocation": 1,
+      "id": "URL001"
+    },
+    "animals": [],
+    "observations": [],
+    "allObservations": []
+  },
+  {
+    "id": "OBSERVATION002",
+    "name": "Second observation on Uranus",
+    "notes": "Second observation of an animal on planet Uranus. After seeing the Narwhal at location Uranus location 001,we went further along the water until we got to something that looked like the Great Barrier Reef. We sat there and enjoyed the view for a while. As we were about to leave that we saw something moving in the water and chose to send out the drone to find out what this was.After going both further out and deeper we actually saw a living Narwhal, which is amazing!",
+    "observationTime": [
+      2345,
+      4,
+      12
+    ],
+    "observationAnimals": {
+      "type": "Mammalia",
+      "name": "Narwhal",
+      "latinName": "Monodon Monoceros",
+      "color": "White",
+      "pictureURL": "https://www.un-habitat.org/wp-content/uploads/2017/08/article-4-narwhal.jpg",
+      "livesInWater": true,
+      "canFly": false,
+      "laysEggs": false,
+      "weight": 940.0,
+      "legs": 0,
+      "domesticated": false,
+      "totalBodySize": 5.5,
+      "family": "Monodontidae",
+      "id": "NA100"
+    },
+    "location": {
+      "locationName": "Uranus location 001",
+      "latitude": -82.666936,
+      "longitude": 113.268002,
+      "locationBiome": {
+        "biomeClimateGroup": {
+          "groupLetter": "E",
+          "groupName": "Polar & Alpine Climate",
+          "avgTemperature": 5.0
+        },
+        "name": "Tundra"
+      },
+      "observationsAtLocation": 1,
+      "id": "URL001"
+    },
+    "animals": [],
+    "observations": [],
+    "allObservations": []
+  },
+  {
+    "id": "OBSERVATION003",
+    "name": "Third observation on Uranus",
+    "notes": "Almost two weeks has passed since we last saw an animal, I think we scared them away when we landed.Anyway great news, during our expedition today we saw a pack of Eskimo Curlew s flying around, confirming our suspicion that there were some species of Aves on this planet.",
+    "observationTime": [
+      2345,
+      4,
+      24
+    ],
+    "observationAnimals": {
+      "type": "Aves",
+      "name": "Eskimo Curlew",
+      "latinName": "Numenius Borealis",
+      "color": "Motted brown upperparts and light brown underparts",
+      "pictureURL": "https://www.un-habitat.org/wp-content/uploads/2017/08/article-4-prairie-pigeon.jpg",
+      "livesInWater": false,
+      "canFly": true,
+      "laysEggs": true,
+      "weight": 10.0,
+      "legs": 2,
+      "wingspan": 15.0,
+      "height": 30.0,
+      "hasWings": true,
+      "id": "EC100"
+    },
+    "location": {
+      "locationName": "Uranus location 002",
+      "latitude": -42.935436,
+      "longitude": 146.075,
+      "locationBiome": {
+        "biomeClimateGroup": {
+          "groupLetter": "A",
+          "groupName": "Tropical Climate",
+          "avgTemperature": 18.0
+        },
+        "name": "Savanna"
+      },
+      "observationsAtLocation": 1,
+      "id": "URL002"
+    },
+    "animals": [],
+    "observations": [],
+    "allObservations": []
+  },
+  {
+    "id": "OBSERVATION004",
+    "name": "First observation on Mars",
+    "notes": "Just landed on Mars after almost a year of travelling, and we almost immediately saw a Hula Painted Frog at location null!",
+    "observationTime": [
+      2338,
+      5,
+      17
+    ],
+    "observationAnimals": {
+      "type": "Amphibia",
+      "name": "Hula Painted Frog",
+      "latinName": "Latonia Nigriventer",
+      "color": "Dark belly with small white spots, ochre on the top with a rusty color grading into dark olive-grey to greyish-black on the sides.",
+      "pictureURL": "https://www.edgeofexistence.org/wp-content/uploads/2017/05/Latonia_nigriventer_Photo_Frank_Glaw-1.jpg",
+      "livesInWater": true,
+      "canFly": false,
+      "laysEggs": true,
+      "weight": 5.6,
+      "legs": 4,
+      "group": "Lissamphibia",
+      "subGroup": "Salientia",
+      "id": "Amphibia 1"
+    },
+    "location": {
+      "locationName": "Mars location 001",
+      "latitude": 30.276675,
+      "longitude": 35.406524,
+      "locationBiome": {
+        "biomeClimateGroup": {
+          "groupLetter": "B",
+          "groupName": "Dry Climate",
+          "avgTemperature": 10.0
+        },
+        "name": "Desert"
+      },
+      "observationsAtLocation": 1,
+      "id": "MAL001"
+    },
+    "animals": [],
+    "observations": [],
+    "allObservations": []
+  }
+]

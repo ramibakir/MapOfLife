@@ -1,13 +1,16 @@
 package no.hiof.ramiab.model;
 
-import java.util.ArrayList;
-
 public class Location {
     private String locationName, ID;
     private double latitude, longitude;
     private Biome locationBiome;
     private int observationsAtLocation;
-    private ArrayList<Observation> observations = new ArrayList<>();
+    //private ArrayList<Observation> observations = new ArrayList<>();
+
+    /*Remember to create empty constructors for deserializing*/
+    public Location() {
+
+    }
 
     public Location(String ID, String locationName, double latitude, double longitude, Biome locationBiome, int observationsAtLocation) {
         this.ID = ID;
@@ -18,28 +21,28 @@ public class Location {
         this.observationsAtLocation = observationsAtLocation;
     }
 
-    /*Retrieves an observation based on the unique UUID*/
-    public Observation getOneObservation(String ID){
-        for(Observation o : observations){
-            if(o.getID().equals(ID)){
+    /*Retrieves an observation based on the ID*//*
+    public Observation getOneObservation(String ID) {
+        for (Observation o : observations) {
+            if (o.getId().equals(ID)) {
                 return o;
             }
         }
         return null;
     }
 
-    /*Remember that this returns a copy of observations*/
-    public ArrayList<Observation> getAllObservations(){
-        return new ArrayList<>(observations);
+    *//*Remember that this returns a copy of observations*//*
+    public ArrayList<Observation> getAllObservations() {
+        return observations;
     }
 
-    public void addObservation(Observation observation){
+    public void addObservation(Observation observation) {
         observations.add(observation);
-   }
+    }
 
-   public void removeObservation(Observation observation){
+    public void removeObservation(Observation observation) {
         observations.remove(observation);
-   }
+    }*/
 
     public String getID() {
         return ID;
@@ -91,7 +94,7 @@ public class Location {
 
     @Override
     public String toString() {
-        return String.format("Location %s is located at (%f, %f) and has a %s as a biome. There has been %d observations of animals at this location.", getLocationName(),
-                getLatitude(), getLongitude(), getLocationBiome().getName(), getObservationsAtLocation());
+        return String.format("Location %s is located at (%f, %f) and has a %s as a biome. There has been %d %s of animals at this location.", getLocationName(),
+                getLatitude(), getLongitude(), getLocationBiome().getName(), getObservationsAtLocation(), getObservationsAtLocation() == 1 ? "observation" : "observations");
     }
 }

@@ -77,7 +77,7 @@
         max-height: 280px;
     }
 
-    h1 {
+    h1{
         color: aliceblue;
     }
 

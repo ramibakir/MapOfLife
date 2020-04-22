@@ -4,17 +4,19 @@ import io.javalin.http.Context;
 import no.hiof.ramiab.repository.IMapOfLifeRepository;
 
 public class ObservationController {
-    private IMapOfLifeRepository mapOfLifeRepository;
+    private final IMapOfLifeRepository mapOfLifeRepository;
 
     public ObservationController(IMapOfLifeRepository mapOfLifeRepository) {
         this.mapOfLifeRepository = mapOfLifeRepository;
     }
 
-    public void deleteObservation(Context context){
-        String planet = context.pathParam("planet-id");
-        String location = context.pathParam("location-id");
-        String observation = context.pathParam("observation-id");
+    public void getAllObservations(Context context) {
+        context.json(mapOfLifeRepository.getAllObservations());
+    }
 
-        mapOfLifeRepository.deleteObservation(planet, location, observation);
+    public void createObservation(Context context) {
+    }
+
+    public void deleteObservation(Context context) {
     }
 }

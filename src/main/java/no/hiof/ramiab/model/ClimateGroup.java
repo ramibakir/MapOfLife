@@ -7,6 +7,11 @@ public class ClimateGroup implements Comparable<ClimateGroup> {
     private String groupName;
     private double avgTemperature;
 
+    /*Remember to create empty constructors for deserializing*/
+    public ClimateGroup() {
+
+    }
+
     public ClimateGroup(char groupLetter, String groupName, double avgTemperature) {
         this.groupLetter = groupLetter; //A
         this.groupName = groupName; //Tropical climate
@@ -39,15 +44,14 @@ public class ClimateGroup implements Comparable<ClimateGroup> {
 
     @Override
     public String toString() {
-        return String.format("In group %c, also known as %s, there ");
+        return String.format("In group %c, also known as %s, the average temperature is %f celcius.", getGroupLetter(), getGroupName(), getAvgTemperature());
     }
 
     @Override
     public int compareTo(ClimateGroup climateGroup) {
-        if(this.avgTemperature < climateGroup.getAvgTemperature()){
+        if (this.avgTemperature < climateGroup.getAvgTemperature()) {
             return -1;
-        }
-        else if(this.avgTemperature > climateGroup.getAvgTemperature()){
+        } else if (this.avgTemperature > climateGroup.getAvgTemperature()) {
             return 1;
         }
         return 0;

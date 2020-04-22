@@ -2,13 +2,18 @@ package no.hiof.ramiab.model.animal;
 
 public class Mammalia extends Animal {
     private boolean domesticated;
-    private double size;
-    private String type;
+    private double totalBodySize;
+    private String family;
 
-    public Mammalia(String ID, String animalName, String latinName, String color, String pictureURL, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, int legs, String type, double size, boolean domesticated) {
+    /*Remember to create empty constructors for deserializing*/
+    public Mammalia() {
+
+    }
+
+    public Mammalia(String ID, String animalName, String latinName, String color, String pictureURL, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, int legs, String family, double totalBodySize, boolean domesticated) {
         super(ID, animalName, latinName, color, pictureURL, livesInWater, canFly, laysEggs, weight, legs);
-        this.type = type;
-        this.size = size;
+        this.family = family;
+        this.totalBodySize = totalBodySize;
         this.domesticated = domesticated;
     }
 
@@ -20,28 +25,25 @@ public class Mammalia extends Animal {
         this.domesticated = domesticated;
     }
 
-    public double getSize() {
-        return size;
+    public double getTotalBodySize() {
+        return totalBodySize;
     }
 
-    public void setSize(double size) {
-        this.size = size;
+    public void setTotalBodySize(double totalBodySize) {
+        this.totalBodySize = totalBodySize;
     }
 
-    public String getType() {
-        return type;
+    public String getFamily() {
+        return family;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setFamily(String family) {
+        this.family = family;
     }
 
     @Override
     public String toString() {
-        return "Mammalia{" +
-                "domesticated=" + domesticated +
-                ", size=" + size +
-                ", type='" + type + '\'' +
-                '}';
+        return String.format("%s belongs to the group %s and is of type %s. %s weighs %.2fkgs and the total body size is %f.", super.toString(), this.getClass().getSimpleName(), getFamily(),
+                getName(), getWeight(), getTotalBodySize());
     }
 }

@@ -1,9 +1,12 @@
 package no.hiof.ramiab.model.animal;
 
-import no.hiof.ramiab.model.animal.Animal;
-
 public class Invertebrate extends Animal {
     private String group, subGroup;
+
+    /*Remember to create empty constructors for deserializing*/
+    public Invertebrate() {
+
+    }
 
     public Invertebrate(String ID, String animalName, String latinName, String color, String pictureURL, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, int legs, String group, String subGroup) {
         super(ID, animalName, latinName, color, pictureURL, livesInWater, canFly, laysEggs, weight, legs);
@@ -29,6 +32,7 @@ public class Invertebrate extends Animal {
 
     @Override
     public String toString() {
-        return super.toString() + " " + getAnimalName() + " is a " + this.getClass().getSimpleName() + " and is part of the " + getGroup() + " family";
+        return String.format("%s is an %s and belongs to the group %s and is a part of the %s family. %s weighs %.2fg and has %d legs", super.toString(), this.getClass().getSimpleName(), getGroup(), getSubGroup(),
+                getName(), getWeight(), getLegs());
     }
 }
