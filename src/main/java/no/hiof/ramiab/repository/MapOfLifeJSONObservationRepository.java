@@ -13,8 +13,8 @@ public class MapOfLifeJSONObservationRepository implements IMapOfLifeRepository 
     private final ArrayList<Observation> observations = new ArrayList<>();
 
     public MapOfLifeJSONObservationRepository() {
-        readObservationsFromFile("mal.json");
-        writeObservationsToFile("mal.json");
+        readObservationsFromFile("observations.json");
+        writeObservationsToFile("observations.json");
     }
 
     public ArrayList<Observation> readObservationsFromFile(String fileName) {
