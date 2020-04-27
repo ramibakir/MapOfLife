@@ -1,11 +1,57 @@
-<mxfile host="app.diagrams.net" modified="2020-04-22T21:46:34.337Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="fdg4RXLdFR1u5Vj05qpt" version="13.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-04-23T19:06:09.240Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="i21B8JmR1mxJc8j_56Sh" version="13.0.1" type="github">
   <diagram id="1KH7GWBm2Y5lBww-GOBJ" name="Page-1">
-    <mxGraphModel dx="3470" dy="1930" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2313" dy="1287" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Zb_Kojj64OA-gDlmBnvP-25" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Zb_Kojj64OA-gDlmBnvP-13" edge="1">
+          <mxGeometry x="-0.0516" y="-1" width="160" relative="1" as="geometry">
+            <mxPoint x="70" y="360" as="sourcePoint" />
+            <mxPoint x="180" y="700" as="targetPoint" />
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zb_Kojj64OA-gDlmBnvP-27" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Zb_Kojj64OA-gDlmBnvP-18" target="Zb_Kojj64OA-gDlmBnvP-12" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="480" y="290" as="sourcePoint" />
+            <mxPoint x="330" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zb_Kojj64OA-gDlmBnvP-28" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Zb_Kojj64OA-gDlmBnvP-22" target="Zb_Kojj64OA-gDlmBnvP-10" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="520" y="300" as="sourcePoint" />
+            <mxPoint x="680" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-3qulMuxzS8h71G26jp-9" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="t-3qulMuxzS8h71G26jp-6" target="Zb_Kojj64OA-gDlmBnvP-12">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="620" y="794" as="sourcePoint" />
+            <mxPoint x="420" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-3qulMuxzS8h71G26jp-20" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-3qulMuxzS8h71G26jp-19" target="t-3qulMuxzS8h71G26jp-26">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1380" y="270" as="sourcePoint" />
+            <mxPoint x="1370" y="237" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-3qulMuxzS8h71G26jp-21" value="«interface»&lt;br&gt;&lt;b&gt;Comparable&lt;/b&gt;" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1050" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t-3qulMuxzS8h71G26jp-22" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Zb_Kojj64OA-gDlmBnvP-33" target="t-3qulMuxzS8h71G26jp-21">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1040" y="1300" as="sourcePoint" />
+            <mxPoint x="1200" y="1300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-3qulMuxzS8h71G26jp-23" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;exitX=1.013;exitY=1.017;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Zb_Kojj64OA-gDlmBnvP-12" target="t-3qulMuxzS8h71G26jp-21">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="650" y="1090" as="sourcePoint" />
+            <mxPoint x="810" y="1090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="Zb_Kojj64OA-gDlmBnvP-9" value="Animal" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="120" y="40" width="280" height="580" as="geometry" />
+          <mxGeometry x="130" y="120" width="280" height="580" as="geometry" />
         </mxCell>
         <mxCell id="Zb_Kojj64OA-gDlmBnvP-10" value="- String: name&#xa;- String: nameLatin&#xa;- String: id&#xa;- String: color&#xa;- String: pictureURL&#xa;- boolean: livesInWater&#xa;- boolean: canFly&#xa;- boolean: laysEggs&#xa;- double weight&#xa;- int: legs&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Zb_Kojj64OA-gDlmBnvP-9" vertex="1">
           <mxGeometry y="26" width="280" height="174" as="geometry" />
@@ -16,27 +62,8 @@
         <mxCell id="Zb_Kojj64OA-gDlmBnvP-12" value="+ Animal(String id, String name, String nameLatin, String color, String pictureURL, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, int legs)&#xa;+ String getName&#xa;+ void setName(String name)&#xa;+ String getnameLatin&#xa;+ void setNameLatin(String nameLatin)&#xa;+ String getId&#xa;+ void setId(String id)&#xa;+ String getColor&#xa;+ void setColor(String color)&#xa;+ String getPictureURL&#xa;+ void setPictureURL(String pictureURL)&#xa;+ boolean isLivesInWater&#xa;+ void setLivesInWater(boolean livesInWater)&#xa;+ boolean isCanFly&#xa;+ void setCanFly(boolean canFly)&#xa;+ boolean isLaysEggs&#xa;+ void setLaysEggs(boolean laysEggs)&#xa;+ double getWeight&#xa;+ void setWeight(double weight)&#xa;+ int getLegs&#xa;+ void setLegs(int legs)&#xa;+ String toString()&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="Zb_Kojj64OA-gDlmBnvP-9" vertex="1">
           <mxGeometry y="208" width="280" height="372" as="geometry" />
         </mxCell>
-        <mxCell id="Zb_Kojj64OA-gDlmBnvP-25" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Zb_Kojj64OA-gDlmBnvP-13" edge="1">
-          <mxGeometry x="-0.0516" y="-1" width="160" relative="1" as="geometry">
-            <mxPoint x="60" y="280" as="sourcePoint" />
-            <mxPoint x="170" y="620" as="targetPoint" />
-            <mxPoint y="-1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Zb_Kojj64OA-gDlmBnvP-27" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Zb_Kojj64OA-gDlmBnvP-18" target="Zb_Kojj64OA-gDlmBnvP-12" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="470" y="210" as="sourcePoint" />
-            <mxPoint x="320" y="250" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Zb_Kojj64OA-gDlmBnvP-28" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Zb_Kojj64OA-gDlmBnvP-22" target="Zb_Kojj64OA-gDlmBnvP-10" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="510" y="220" as="sourcePoint" />
-            <mxPoint x="670" y="220" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="t-3qulMuxzS8h71G26jp-16" value="MapOfLifeJSONObservationRepository" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="1440" y="80" width="240" height="300" as="geometry" />
+          <mxGeometry x="1450" y="160" width="240" height="300" as="geometry" />
         </mxCell>
         <mxCell id="t-3qulMuxzS8h71G26jp-17" value="- ArrayList&lt;Observation&gt; observations" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=4" vertex="1" parent="t-3qulMuxzS8h71G26jp-16">
           <mxGeometry y="26" width="240" height="26" as="geometry" />
@@ -48,7 +75,7 @@
           <mxGeometry y="60" width="240" height="240" as="geometry" />
         </mxCell>
         <mxCell id="Zb_Kojj64OA-gDlmBnvP-17" value="Amphibia" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="600" y="415" width="420" height="200" as="geometry" />
+          <mxGeometry x="610" y="495" width="420" height="200" as="geometry" />
         </mxCell>
         <mxCell id="Zb_Kojj64OA-gDlmBnvP-18" value="- String: group&#xa;- String: subGroup" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Zb_Kojj64OA-gDlmBnvP-17" vertex="1">
           <mxGeometry y="26" width="420" height="34" as="geometry" />
@@ -60,7 +87,7 @@
           <mxGeometry y="80" width="420" height="120" as="geometry" />
         </mxCell>
         <mxCell id="Zb_Kojj64OA-gDlmBnvP-21" value="Aves" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="600" y="80" width="431" height="250" as="geometry" />
+          <mxGeometry x="610" y="160" width="431" height="250" as="geometry" />
         </mxCell>
         <mxCell id="Zb_Kojj64OA-gDlmBnvP-22" value="- double: wingspan&#xa;- double: height&#xa;- boolean: hasWings&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Zb_Kojj64OA-gDlmBnvP-21" vertex="1">
           <mxGeometry y="26" width="431" height="54" as="geometry" />
@@ -71,20 +98,8 @@
         <mxCell id="Zb_Kojj64OA-gDlmBnvP-24" value="+ Bird(String id, String name, String nameLatin, String color, String pictureURL, boolean &#xa;livesInWater, boolean canFly, boolean laysEggs, double weight, int legs, double wingspan, double height, boolean hasWings)&#xa;+ double getWingspan&#xa;+ void setWingspan(double wingspan)&#xa;+ double getHeight&#xa;+ void setHeight(double height)&#xa;+ boolean isHasWings&#xa;+ void setHasWings(boolean hasWings)&#xa;+ String toString()&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="Zb_Kojj64OA-gDlmBnvP-21" vertex="1">
           <mxGeometry y="88" width="431" height="162" as="geometry" />
         </mxCell>
-        <mxCell id="t-3qulMuxzS8h71G26jp-11" value="&lt;&lt;interface&gt;&gt;&#xa;IMapOfLifeRepository&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=44;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="1120" y="80" width="240" height="240" as="geometry" />
-        </mxCell>
-        <mxCell id="t-3qulMuxzS8h71G26jp-12" value="+ Observation getOneObservation(String observationID)&#xa;+ ArrayList&lt;Observation&gt; getAllObservations" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="t-3qulMuxzS8h71G26jp-11">
-          <mxGeometry y="44" width="240" height="66" as="geometry" />
-        </mxCell>
-        <mxCell id="t-3qulMuxzS8h71G26jp-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="t-3qulMuxzS8h71G26jp-11">
-          <mxGeometry y="110" width="240" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="t-3qulMuxzS8h71G26jp-14" value="+ void createObservation(Observation observation)&#xa;+ void updateObservation(Observation updatedObservation)&#xa;+ void deleteObservation(Observation observation)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="t-3qulMuxzS8h71G26jp-11">
-          <mxGeometry y="118" width="240" height="122" as="geometry" />
-        </mxCell>
         <mxCell id="t-3qulMuxzS8h71G26jp-5" value="Mammalia" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="640" y="670" width="480" height="250" as="geometry" />
+          <mxGeometry x="650" y="750" width="480" height="250" as="geometry" />
         </mxCell>
         <mxCell id="t-3qulMuxzS8h71G26jp-6" value="- String: family&#xa;- double: totalBodySize&#xa;- boolean: domesticated" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="t-3qulMuxzS8h71G26jp-5">
           <mxGeometry y="26" width="480" height="54" as="geometry" />
@@ -96,7 +111,7 @@
           <mxGeometry y="88" width="480" height="162" as="geometry" />
         </mxCell>
         <mxCell id="Zb_Kojj64OA-gDlmBnvP-13" value="Invertebrate" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="40" y="750" width="480" height="200" as="geometry" />
+          <mxGeometry x="50" y="830" width="480" height="200" as="geometry" />
         </mxCell>
         <mxCell id="Zb_Kojj64OA-gDlmBnvP-14" value="- String: group&#xa;- String: subGroup&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Zb_Kojj64OA-gDlmBnvP-13" vertex="1">
           <mxGeometry y="26" width="480" height="34" as="geometry" />
@@ -107,68 +122,8 @@
         <mxCell id="Zb_Kojj64OA-gDlmBnvP-16" value="+ Invertebrate(String id, String name, String nameLatin, String color, String pictureURL, boolean livesInWater, boolean canFly, boolean laysEggs, double weight, int legs, String group, String subGroup)&#xa;+ String getGroup&#xa;+ void setGroup(String group)&#xa;+ String getSubGroup&#xa;+ void setSubGroup(String subGroup)&#xa;+ String toString()&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="Zb_Kojj64OA-gDlmBnvP-13" vertex="1">
           <mxGeometry y="68" width="480" height="132" as="geometry" />
         </mxCell>
-        <mxCell id="t-3qulMuxzS8h71G26jp-9" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="t-3qulMuxzS8h71G26jp-6" target="Zb_Kojj64OA-gDlmBnvP-12">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="610" y="714" as="sourcePoint" />
-            <mxPoint x="410" y="690" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Zb_Kojj64OA-gDlmBnvP-29" value="Location" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="40" y="1000" width="360" height="360" as="geometry" />
-        </mxCell>
-        <mxCell id="Zb_Kojj64OA-gDlmBnvP-30" value="- String: locationName&#xa;- String: id&#xa;- double: longitude&#xa;- double: latitude&#xa;- Biome: locationBiome&#xa;- int: observationsAtLocation&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="Zb_Kojj64OA-gDlmBnvP-29" vertex="1">
-          <mxGeometry y="26" width="360" height="94" as="geometry" />
-        </mxCell>
-        <mxCell id="Zb_Kojj64OA-gDlmBnvP-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Zb_Kojj64OA-gDlmBnvP-29" vertex="1">
-          <mxGeometry y="120" width="360" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="Zb_Kojj64OA-gDlmBnvP-32" value="+ Location(String id, String locationName, double latitude, double longitude, Biome locationBiome, int observationsAtLocation)&lt;br&gt;+ String getId&lt;br&gt;+ void setId(String Id)&lt;br&gt;+ String getLocationName&lt;br&gt;+ void setLocationName(String locationName)&lt;br&gt;+ double getLatitude&lt;br&gt;+ void setLatitude(double latitude)&lt;br&gt;+ double getLongitude&lt;br&gt;+ void setLongitude(double longitude)&lt;br&gt;+ int getObservationsAtLocation&lt;br&gt;&lt;div&gt;+ void setObservationsAtLocation(int observationsAtLocation)&lt;/div&gt;&lt;div&gt;+ Biome getLocationBiome&lt;/div&gt;&lt;div&gt;+ void setLocationBiome(Biome biome)&lt;/div&gt;&lt;div&gt;+ String toString()&lt;br&gt;&lt;/div&gt;&lt;br&gt; " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;" parent="Zb_Kojj64OA-gDlmBnvP-29" vertex="1">
-          <mxGeometry y="128" width="360" height="232" as="geometry" />
-        </mxCell>
-        <mxCell id="Zb_Kojj64OA-gDlmBnvP-37" value="Planet" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="440" y="1000" width="360" height="440" as="geometry" />
-        </mxCell>
-        <mxCell id="Zb_Kojj64OA-gDlmBnvP-38" value="- String: planetName&#xa;- String planetSystem&#xa;- double: mass&#xa;- double: radius&#xa;- double: orbitalPeriod&#xa;- double: meanSurfaceTemperature&#xa;- ArrayList&lt;Location&gt; locations&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Zb_Kojj64OA-gDlmBnvP-37" vertex="1">
-          <mxGeometry y="26" width="360" height="114" as="geometry" />
-        </mxCell>
-        <mxCell id="Zb_Kojj64OA-gDlmBnvP-39" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Zb_Kojj64OA-gDlmBnvP-37" vertex="1">
-          <mxGeometry y="140" width="360" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="Zb_Kojj64OA-gDlmBnvP-40" value="+ Planet(String name, double mass, double radius, double orbitalPeriod, double meanSurfaceTemperature)&#xa;+ ArrayList&lt;Location&gt; getAllLocations&#xa;+ Location getOneLocation(String id)&#xa;+ void addLocation(Location location)&#xa;+ void removeLocation(Location location)&#xa;+ String getName&#xa;+ void setName&#xa;+ double getMass&#xa;+ void setMass(double mass)&#xa;+ double getRadius&#xa;+ void setRadius(double radius)&#xa;+ double getOrbitalPeriod&#xa;+ void setOrbitalPeriod(double orbitalPeriod)&#xa;+ double getMeanSurfaceTemperature&#xa;+ void setMeanSurfaceTemperature(double meanSurfaceTemperature)&#xa;+ ArrayList&lt;Location&gt; getLocations&#xa;+ void setLocation(ArrayList&lt;Location&gt; locations)&#xa;+ String toString()&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="Zb_Kojj64OA-gDlmBnvP-37" vertex="1">
-          <mxGeometry y="148" width="360" height="292" as="geometry" />
-        </mxCell>
-        <mxCell id="Zb_Kojj64OA-gDlmBnvP-33" value="Observation" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="840" y="1000" width="550" height="560" as="geometry" />
-        </mxCell>
-        <mxCell id="Zb_Kojj64OA-gDlmBnvP-34" value="- static int: observationCounter = 1&#xa;- String: id&#xa;- String: name&#xa;- String: notes&#xa;- LocalDate: observationTime&#xa;- Animal observationAnimals&#xa;- Location location&#xa;- ArrayList&lt;Animal&gt; animals&#xa;- ArrayList&lt;Observation&gt; observations" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=0" parent="Zb_Kojj64OA-gDlmBnvP-33" vertex="1">
-          <mxGeometry y="26" width="550" height="134" as="geometry" />
-        </mxCell>
-        <mxCell id="Zb_Kojj64OA-gDlmBnvP-35" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Zb_Kojj64OA-gDlmBnvP-33" vertex="1">
-          <mxGeometry y="160" width="550" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="Zb_Kojj64OA-gDlmBnvP-36" value="+ Observation(String name, String notes, LocalDate observationTime, Location location, Animal observationAnimals)&#xa;+ void addAnimals(Animal animal)&#xa;+ Animal getAnAnimal(String ID)&#xa;+ void removeAnimal(Animal animal)&#xa;+ Observation getOneObservation(String ID)&#xa;+ ArrayList&lt;Observation&gt; getAllObservations&#xa;+ void addObservation(Observation observation)&#xa;+ void removeObservation(Observation observation)&#xa;+ String getId&#xa;+ void setId(String id)&#xa;+ String getObservationName&#xa;+ void setObservationName(String observationName)&#xa;+ String getNotes&#xa;+ void setNotes(String notes)&#xa;+ LocalDate getObservationTime&#xa;+ void setObservationTime(LocalDate observationTime)&#xa;+ ArrayList&lt;Animal&gt; getAnimals&#xa;+ void setAnimals(ArrayList&lt;Animal&gt; animals)&#xa;+ Animal getObservationAnimals&#xa;+ void setObservationAnimals(Animal observationAnimals)&#xa;+ Location getLocation&#xa;+ void setLocation(Location location)&#xa;+ ArrayList&lt;Observation&gt; getObservations&#xa;+ void setObservations(ArrayList&lt;Observations&gt; observations)&#xa;+ String toString()&#xa;+ int compareTo(Observation observation)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="Zb_Kojj64OA-gDlmBnvP-33" vertex="1">
-          <mxGeometry y="168" width="550" height="392" as="geometry" />
-        </mxCell>
-        <mxCell id="zi6ysEWE1YehNAUKYRXI-6" value="Biome" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" parent="1" vertex="1">
-          <mxGeometry x="40" y="1390" width="239" height="270" as="geometry" />
-        </mxCell>
-        <mxCell id="zi6ysEWE1YehNAUKYRXI-7" value="- String biomeName&#xa;- ClimateGroup biomeClimateGroup&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="zi6ysEWE1YehNAUKYRXI-6" vertex="1">
-          <mxGeometry y="26" width="239" height="44" as="geometry" />
-        </mxCell>
-        <mxCell id="zi6ysEWE1YehNAUKYRXI-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zi6ysEWE1YehNAUKYRXI-6" vertex="1">
-          <mxGeometry y="70" width="239" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="zi6ysEWE1YehNAUKYRXI-9" value="+ Biome(String biomeName, ClimateGroup biomeClimateGroup)&#xa;+ String getBiomeName&#xa;+ void setBiomeName(String biomeName)&#xa;+ ClimateGroup getBiomeClimateGroup&#xa;+ void setBiomeClimateGroup(ClimateGroup biomeClimateGroup)&#xa;+ String toString()&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="zi6ysEWE1YehNAUKYRXI-6" vertex="1">
-          <mxGeometry y="78" width="239" height="192" as="geometry" />
-        </mxCell>
-        <mxCell id="t-3qulMuxzS8h71G26jp-20" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-3qulMuxzS8h71G26jp-19" target="t-3qulMuxzS8h71G26jp-12">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="1370" y="190" as="sourcePoint" />
-            <mxPoint x="1410" y="260" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="t-3qulMuxzS8h71G26jp-1" value="ObservationController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="1080" y="360" width="329" height="180" as="geometry" />
+          <mxGeometry x="1090" y="440" width="329" height="180" as="geometry" />
         </mxCell>
         <mxCell id="t-3qulMuxzS8h71G26jp-2" value="- IMapOfLifeRepository: mapOfLifeRepository" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=4" vertex="1" parent="t-3qulMuxzS8h71G26jp-1">
           <mxGeometry y="26" width="329" height="44" as="geometry" />
@@ -180,7 +135,7 @@
           <mxGeometry y="78" width="329" height="102" as="geometry" />
         </mxCell>
         <mxCell id="azx4D_17l1iU42Zs0j3d-1" value="ClimateGroup" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="1200" y="640" width="440" height="230" as="geometry" />
+          <mxGeometry x="1210" y="720" width="440" height="230" as="geometry" />
         </mxCell>
         <mxCell id="azx4D_17l1iU42Zs0j3d-2" value="- char: groupLetter&#xa;- String: groupName&#xa;- double avgTemperature" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="azx4D_17l1iU42Zs0j3d-1" vertex="1">
           <mxGeometry y="26" width="440" height="54" as="geometry" />
@@ -190,6 +145,63 @@
         </mxCell>
         <mxCell id="azx4D_17l1iU42Zs0j3d-4" value="+ ClimateGroup(char groupLetter, String groupName, double avgTemperature)&#xa;+ char getGroupLetter&#xa;+ void setGroupLetter(char groupLetter)&#xa;+ String getGroupName&#xa;+ void setGroupName(String groupName)&#xa;+ double getAvgTemperature&#xa;+ void setAvgTemperature(double avgTemperature)&#xa;+ String toString()&#xa;+ int compareTo(ClimateGroup climateGroup)&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="azx4D_17l1iU42Zs0j3d-1" vertex="1">
           <mxGeometry y="88" width="440" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="Zb_Kojj64OA-gDlmBnvP-29" value="Location" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="150" y="1140" width="360" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Zb_Kojj64OA-gDlmBnvP-30" value="- String: locationName&#xa;- String: id&#xa;- double: longitude&#xa;- double: latitude&#xa;- Biome: locationBiome&#xa;- int: observationsAtLocation&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="Zb_Kojj64OA-gDlmBnvP-29" vertex="1">
+          <mxGeometry y="26" width="360" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="Zb_Kojj64OA-gDlmBnvP-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Zb_Kojj64OA-gDlmBnvP-29" vertex="1">
+          <mxGeometry y="120" width="360" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zb_Kojj64OA-gDlmBnvP-32" value="+ Location(String id, String locationName, double latitude, double longitude, Biome locationBiome, int observationsAtLocation)&lt;br&gt;+ String getId&lt;br&gt;+ void setId(String Id)&lt;br&gt;+ String getLocationName&lt;br&gt;+ void setLocationName(String locationName)&lt;br&gt;+ double getLatitude&lt;br&gt;+ void setLatitude(double latitude)&lt;br&gt;+ double getLongitude&lt;br&gt;+ void setLongitude(double longitude)&lt;br&gt;+ int getObservationsAtLocation&lt;br&gt;&lt;div&gt;+ void setObservationsAtLocation(int observationsAtLocation)&lt;/div&gt;&lt;div&gt;+ Biome getLocationBiome&lt;/div&gt;&lt;div&gt;+ void setLocationBiome(Biome biome)&lt;/div&gt;&lt;div&gt;+ String toString()&lt;br&gt;&lt;/div&gt;&lt;br&gt; " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;" parent="Zb_Kojj64OA-gDlmBnvP-29" vertex="1">
+          <mxGeometry y="128" width="360" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="Zb_Kojj64OA-gDlmBnvP-37" value="Planet" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="550" y="1140" width="360" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="Zb_Kojj64OA-gDlmBnvP-38" value="- String: planetName&#xa;- String planetSystem&#xa;- double: mass&#xa;- double: radius&#xa;- double: orbitalPeriod&#xa;- double: meanSurfaceTemperature&#xa;- ArrayList&lt;Location&gt; locations&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Zb_Kojj64OA-gDlmBnvP-37" vertex="1">
+          <mxGeometry y="26" width="360" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="Zb_Kojj64OA-gDlmBnvP-39" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Zb_Kojj64OA-gDlmBnvP-37" vertex="1">
+          <mxGeometry y="140" width="360" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zb_Kojj64OA-gDlmBnvP-40" value="+ Planet(String name, double mass, double radius, double orbitalPeriod, double meanSurfaceTemperature)&#xa;+ ArrayList&lt;Location&gt; getAllLocations&#xa;+ Location getOneLocation(String id)&#xa;+ void addLocation(Location location)&#xa;+ void removeLocation(Location location)&#xa;+ String getName&#xa;+ void setName&#xa;+ double getMass&#xa;+ void setMass(double mass)&#xa;+ double getRadius&#xa;+ void setRadius(double radius)&#xa;+ double getOrbitalPeriod&#xa;+ void setOrbitalPeriod(double orbitalPeriod)&#xa;+ double getMeanSurfaceTemperature&#xa;+ void setMeanSurfaceTemperature(double meanSurfaceTemperature)&#xa;+ ArrayList&lt;Location&gt; getLocations&#xa;+ void setLocation(ArrayList&lt;Location&gt; locations)&#xa;+ String toString()&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="Zb_Kojj64OA-gDlmBnvP-37" vertex="1">
+          <mxGeometry y="148" width="360" height="292" as="geometry" />
+        </mxCell>
+        <mxCell id="Zb_Kojj64OA-gDlmBnvP-33" value="Observation" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="950" y="1140" width="550" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="Zb_Kojj64OA-gDlmBnvP-34" value="- static int: observationCounter = 1&#xa;- String: id&#xa;- String: name&#xa;- String: notes&#xa;- LocalDate: observationTime&#xa;- Animal observationAnimals&#xa;- Location location" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=0" parent="Zb_Kojj64OA-gDlmBnvP-33" vertex="1">
+          <mxGeometry y="26" width="550" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="Zb_Kojj64OA-gDlmBnvP-35" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Zb_Kojj64OA-gDlmBnvP-33" vertex="1">
+          <mxGeometry y="130" width="550" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zb_Kojj64OA-gDlmBnvP-36" value="+ Observation(String name, String notes, LocalDate observationTime, Location location, Animal observationAnimals)&#xa;+ String getId&#xa;+ void setId(String id)&#xa;+ String getObservationName&#xa;+ void setObservationName(String observationName)&#xa;+ String getNotes&#xa;+ void setNotes(String notes)&#xa;+ LocalDate getObservationTime&#xa;+ void setObservationTime(LocalDate observationTime)&#xa;+ ArrayList&lt;Animal&gt; getAnimals&#xa;+ void setAnimals(ArrayList&lt;Animal&gt; animals)&#xa;+ Animal getObservationAnimals&#xa;+ void setObservationAnimals(Animal observationAnimals)&#xa;+ Location getLocation&#xa;+ void setLocation(Location location)&#xa;+ ArrayList&lt;Observation&gt; getObservations&#xa;+ void setObservations(ArrayList&lt;Observations&gt; observations)&#xa;+ String toString()&#xa;+ int compareTo(Observation observation)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="Zb_Kojj64OA-gDlmBnvP-33" vertex="1">
+          <mxGeometry y="138" width="550" height="292" as="geometry" />
+        </mxCell>
+        <mxCell id="t-3qulMuxzS8h71G26jp-24" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="azx4D_17l1iU42Zs0j3d-4" target="t-3qulMuxzS8h71G26jp-21">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1181" y="1040" as="sourcePoint" />
+            <mxPoint x="1050" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-3qulMuxzS8h71G26jp-26" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center ; text-decoration: underline&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;IMapOfLifeRepository&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;span&gt;+ Observation getOneObservation(String observationID)&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;+ ArrayList&amp;lt;Observation&amp;gt; getAllObservations&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;span&gt;+ void createObservation(Observation observation)&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;+ void updateObservation(Observation updatedObservation)&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;+ void deleteObservation(Observation observation)&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1069" y="160" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="zi6ysEWE1YehNAUKYRXI-6" value="Biome" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="1530" width="239" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="zi6ysEWE1YehNAUKYRXI-7" value="- String biomeName&#xa;- ClimateGroup biomeClimateGroup&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="zi6ysEWE1YehNAUKYRXI-6" vertex="1">
+          <mxGeometry y="26" width="239" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="zi6ysEWE1YehNAUKYRXI-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zi6ysEWE1YehNAUKYRXI-6" vertex="1">
+          <mxGeometry y="70" width="239" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zi6ysEWE1YehNAUKYRXI-9" value="+ Biome(String biomeName, ClimateGroup biomeClimateGroup)&#xa;+ String getBiomeName&#xa;+ void setBiomeName(String biomeName)&#xa;+ ClimateGroup getBiomeClimateGroup&#xa;+ void setBiomeClimateGroup(ClimateGroup biomeClimateGroup)&#xa;+ String toString()&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="zi6ysEWE1YehNAUKYRXI-6" vertex="1">
+          <mxGeometry y="78" width="239" height="192" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
